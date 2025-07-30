@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --font-heading: Sen, sans-serif;
+    --primary-color: #FFB900;
+}
 html {
     font-size: 62.5%;
 }
@@ -17,13 +21,17 @@ a {
     display: inline-block;
     color: #FFF;
     padding: 0 16px;
-    width: 118px;
+    min-width: 118px;
     line-height: 50px;
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
-    border-radius: 24.5px;
+    border-radius: 999px;
     background: #171100;
+}
+
+.btn:hover {
+    opacity: 0.9;
 }
 .main-content {
     width: 1170px;
@@ -47,6 +55,7 @@ a {
 .header.fixed {
     position: sticky;
     top: -28px;
+    z-index: 1;
 }
 
 .nav {
@@ -87,4 +96,146 @@ a {
 
 .header .action {
     margin-left: 49px ;
+}
+/* HERO */
+.hero {
+    padding-top: 56px;
+    background: #FFFCF4;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .media-block {
+    width: 48%;
+    position: relative;
+}
+
+.hero .media-block .img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* Hero left */
+.hero .hero-summary {
+    position: absolute;
+    right: -19px;
+    bottom: 48px;
+    width: 270px;
+    padding: 28px 24px;
+    border-radius: 12px;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    background: #FFF;
+}
+.hero-summary .item {
+    display: flex;
+    margin-bottom: 14px;
+}
+.hero-summary .item:last-child {
+    margin-bottom: -14px;
+}
+
+.hero-summary .item:nth-child(2) .icon {
+    background: #FCEFFF;;
+}
+
+.hero-summary .item:nth-child(3) .icon {
+    background: #FCEFFF;;
+}
+.hero-summary .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF9E8;
+}
+.hero-summary .info {
+    margin-left: 16px;
+}
+
+.hero-summary .label {
+    color: #5F5B53;
+    font-size: 1.4rem;
+    line-height: 1.85;
+}
+.hero-summary .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66; 
+}
+
+/* Hero right */
+.hero .content-block {
+    width: 52%;
+    padding: 64px 0 0 130px
+}
+
+.hero .heading{
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -0.02rem;
+}
+
+.hero .desc {
+    margin-top: 22px 0;
+    color: #5F5B53;
+    font-size: 18px;
+    line-height: 1.66;
+}
+
+.hero .cta-group {
+    display: flex;
+    margin: 38px 0 48px;
+}
+
+.hero-cta {
+    min-width: 180px;
+    line-height: 64px;
+    background: var(--primary-color);
+}
+.hero .watch-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 28px;
+    border: none;
+    background: #FFFCF4;
+    cursor: pointer;
+}
+
+.hero .watch-video img {
+    width: 40px;
+    height: 40px;
+    margin-right: 14px;
+}
+
+.hero .watch-video span {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.hero .stats{
+    margin-top: 8px;
+    margin-left: -28px;
+}
+
+
+.hero .stats strong {
+    padding: 0 8px 0 28px;
+    color: #171100;
+    font-family: var(--font-heading);
+    font-size: 4.44rem;
+    font-weight: 700;
+    line-height: 1.22;
 }
