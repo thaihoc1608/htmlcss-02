@@ -400,3 +400,68 @@ a {
     background: var(--primary-color);
 }
 
+/* Feedback */
+
+.feedback {
+    margin-top: 135px;
+    padding: 96px 0;
+    background: #2E2100;
+}
+
+.feedback-item {
+    display: flex;
+}
+
+.feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.feedback-item .info .title {
+    color: #F7F7F7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41;
+}
+
+.feedback-item .info .desc {
+    color: #BFBCB2;
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.feedback-item .dots {
+    display: flex;
+    margin-top: 28px;
+}
+
+.feedback-item .dot {
+    margin-right: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+
+.feedback-item .dot.active {
+    background: #FFB900;
+    cursor: default;
+}
+
+.feedback-item .content {
+    width: 66%;
+    margin-left: auto;
+}
+
+.feedback-item blockquote {
+    margin-left: 30px;
+    color: #FFF;
+    font-size: 26px;
+    font-style: italic;
+    line-height: 1.54;
+}
